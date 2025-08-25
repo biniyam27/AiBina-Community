@@ -86,7 +86,7 @@ async function load() {
        <div className='post-answer'>
         <hr />
         <textarea rows={5} maxLength={1000} value={text} onChange={e=>setText(e.target.value)} placeholder="Type your answer..." />
-          <small>{text.length}/1000</small>
+          <small className='lengthController'>{text.length}/1000</small>
         <button onClick={postAnswer}>Post Answer</button>
       </div>
       

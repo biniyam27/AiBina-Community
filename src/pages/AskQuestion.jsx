@@ -24,9 +24,9 @@ const navigate = useNavigate();
       <h1>Ask a Question</h1>
       <div className="ask-input-wrraper">
        <input value={title} maxLength={100} onChange={e=>setTitle(e.target.value)} placeholder="Title"/>
-        <small className='titleCounter'>{title.length}/100</small>
+        <small className='titleCounter lengthController'>{title.length}/100</small>
       <textarea rows={8} maxLength={1000} value={body} onChange={e=>setBody(e.target.value)} placeholder="Describe your problem(optional)"/>
-        <small className='bodyCounter'>{body.length}/1000</small>
+        <small className='bodyCounter lengthController'>{body.length}/1000</small>
       <input value={tags} onChange={e=>setTags(e.target.value)} placeholder="Tags(optional)"/>
       <button onClick={submit}>Post</button>
       </div>
