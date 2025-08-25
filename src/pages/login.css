@@ -1,0 +1,136 @@
+.login-section{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 40px 8%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.left-login{
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding:55px;
+    text-align: center;
+}
+.left-login h1{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 28px;
+    color: white;
+   
+}
+.left-login p{
+    color: white;
+    
+}
+.left-login .authbtn{
+    text-decoration: none;
+    color: rgb(136, 136, 148);
+}
+.left-login .authbtn:hover{
+    text-decoration: underline;
+}
+.left-login input{
+    width: 100%;
+    height: 30px;
+    background: #333;
+    color: white;
+    margin: 12px 0;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    padding: 22px 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.left-login input:focus{
+    border-bottom: 2px solid red;
+}
+.left-login input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+}
+.login-pass{
+    position: relative;
+}
+.login-pass span{
+    position: absolute;
+    bottom: 25px;
+    right: 12px;
+    cursor: pointer;
+}
+.left-login  button{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    font-size: 16px;
+    background: #096ce5;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.right-login{
+    width: 100%;
+    max-width: 450px;
+}
+.right-login h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.right-login p{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+@media (max-width:1080px){
+    .left-login{
+        padding: 45px;
+    }
+    .right-login h2{
+    font-size: 24px;
+}
+}
+@media (max-width:918px){
+ .left-login{
+        padding: 5%;
+    }
+    .left-login h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.left-login p{
+  font-size: 15px;
+}
+    .right-login h2{
+    font-size: 20px;
+}
+.right-login p{
+    font-size: 15px;
+}
+}
+@media (max-width:830px){
+.login-section{
+    flex-direction: column-reverse;
+    gap: 15px;
+     padding: 36px 4%;
+}
+.left-login  button{
+    padding: 14px;
+    margin-top: 16px;
+}
+}
+@media (max-width:400px){
+    .left-login{
+        padding: 3%;
+    }
+    .left-login p{
+        display: flex;
+        flex-direction: column;
+    }
+}

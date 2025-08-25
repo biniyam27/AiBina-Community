@@ -1,0 +1,130 @@
+.register-section{
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 40px 8%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.left-register{
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 25px 50px;
+    text-align: center;
+}
+.left-register h1{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: white;
+}
+.left-register p{
+    color: white;
+}
+.errormsg{
+    color: rgb(255, 109, 109);
+}
+.left-register .authbtn{
+    text-decoration: none;
+    color: rgb(136, 136, 148);
+}
+.left-register .authbtn:hover{
+    text-decoration: underline;
+}
+.left-register input{
+    width: 100%;
+    height: 20px;
+    background: #333;
+    color: white;
+    margin: 8px 0;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.left-register input:focus{
+    border-bottom: 2px solid red;
+}
+.left-register .name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.left-register input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+}
+.left-register  button{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    font-size: 16px;
+    background: #096ce5;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.password-container{
+    position: relative;
+}
+.password-container span{
+    position: absolute;
+    bottom: 20px;
+    right: 12px;
+    cursor: pointer;
+}
+.right-register{
+    width: 100%;
+    max-width: 450px;
+}
+.right-register h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.right-register p{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+@media (max-width:1130px){
+    .right-register h2{
+    font-size: 25px;
+}
+}
+@media (max-width:978px){
+ .left-register{
+        padding: 3%;
+    }
+    .left-register h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+    .right-register h2{
+    font-size: 21px;
+}
+.right-register p{
+    font-size: 16px;
+}
+}
+@media (max-width:830px){
+.register-section{
+     flex-direction: column-reverse;
+     gap: 15px;
+     padding: 36px 4%;
+}
+.left-register  button{
+    padding: 14px;
+    margin-top: 16px;
+}
+}

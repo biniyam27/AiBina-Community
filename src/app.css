@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(221, 221, 221);
+}
+.main-content{
+    padding-bottom: 45px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    width: 100%;
+    padding:20px 0;
+    background-color: rgb(3, 69, 251);
+    z-index: 1000;
+   
+}
+.bars{
+    font-size: 20px;
+    color: white;
+    display: none;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+}
+.route-container{
+    margin-top: 6%;
+    height: 100vh;
+}
+.logo-container h2{
+    color: rgb(164, 164, 163);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+.logo-container span{
+    color: rgb(255, 255, 255);
+}
+.right-container{
+     margin-right: 10% ;
+}
+.navmenu{
+    width: max-content;
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    transition: .3s;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+}
+.right-container .navlink{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .3s;
+}
+.navlink:hover{
+color: rgb(199, 199, 199);
+}
+.right-container button{
+ border: none;
+ outline: none;
+ padding: 5px 15px;
+ border-radius: 4px;
+ color: blue;
+ font-weight: 600;
+ transition: .3s;
+ cursor: pointer;
+}
+.right-container button:hover{
+    background-color: rgb(21, 21, 219);
+    color: white;
+}
+.user{
+    border: 2px solid rgb(253, 253, 253);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(86, 76, 212);
+    color: rgb(254, 255, 254);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.main-container::-webkit-scrollbar{
+display: none;
+}
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-shrink: 0;
+    width: 100%;
+    padding:15px 0;
+    background-color: rgb(3, 69, 251);
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    z-index: 999;
+    /* margin-top: 8%; */
+}
+@media (max-width: 700px) {
+    .logo-container h2{
+    font-size: 22px;
+    margin-left: 16px;
+}
+header{
+    padding: 15px 0;
+}
+}
+@media (max-width: 600px){
+    header{
+    padding: 10px 0;
+}
+.bars{
+    display: block;
+}
+
+   .navmenu{
+    position: absolute;
+    top: 38px;
+    right: -150px;
+    padding: 20px;
+    background-color: rgb(3, 69, 251);
+    border-radius: 10px;
+    flex-direction: column-reverse;
+    display: none;
+    transition:.3s ease-in-out;
+   }
+   .togglebtn{
+    right: 0;
+    display: flex;
+}
+   .menu{
+    flex-direction: column;
+    align-items: center;
+   }
+}

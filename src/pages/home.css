@@ -1,0 +1,239 @@
+.home-container{
+    position: relative;
+    width: 100%;
+    color:#606063 ;
+    font-family: sans-serif;
+}
+.home-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.home-input input{
+    width: 50%;
+     height: 20px;
+    background: #333;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    padding: 22px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.home-input button{
+    width: 20%;
+    border: 0;
+    outline: 0;
+    padding: 12px;
+    font-size: 16px;
+    background: #096ce5;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.home-input button:hover{
+    background: #1660ba;
+}
+.home-input input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+}
+.home-container .home-title{
+    position: sticky;
+    top: 90px;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 3px 15px;
+    z-index: 20;
+    transition: .3s;
+}
+.nav_black{
+   text-shadow: 4px 3px 8px black;
+   color: white;
+   background-color: #333;
+    
+}
+.home-question-wrraper{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 35px 45px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: #5d5d5d;
+    margin:30px auto 10px;
+    transition: .3s;
+}
+.home-question-wrraper:hover{
+    transform: scale(1.1);
+}
+.usericon{
+ padding: 1.2rem 1.3rem;
+ border: 1px solid grey;
+ border-radius: 50%;
+ background-color: rgb(37, 37, 37);
+ color: white;
+ font-size: 40px;
+}
+.questionlink{
+    min-width: 250px;
+    width: 80%;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    overflow-x: hidden;
+}
+.arrowicon{
+     font-size: 40px;
+}
+.question-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 30px;
+    gap: 10px;
+}
+.question-container span{
+    text-align: end;
+    font-size: 15px;
+}
+.question{
+   max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.question-wrraper{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.buttons button{
+    max-height: 30px;
+   padding: 5px 10px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.tagbtn{
+     background-color: rgb(40, 40, 255);
+}
+.delbtn{
+    background-color: red;
+}
+@media (max-width: 1300px) {
+    .home-question-wrraper{
+        padding: 28px 35px;
+        width: 85%;
+    }
+    .question-container{
+        font-size: 25px;
+    }
+
+}
+@media (max-width: 1000px){
+.home-input{
+    width: 90%;
+}
+.usericon{
+    padding: 1rem 1.1rem;
+    font-size: 34px;
+}
+.questionlink{
+    font-size: 20px;
+}
+.buttons button{
+    padding: 3px 8px;
+    font-size: 18px;
+}
+}
+@media (max-width: 900px){
+.home-question-wrraper{
+    padding: 25px 30px;
+    width: 90%;
+    }
+.usericon{
+    padding: .6rem .8rem;
+    font-size: 30px;
+}
+.questionlink{
+    font-size: 16px;
+}
+.home-container .home-title{
+    font-size: 30px;
+}
+.buttons button{
+    padding: 5px 8px;
+    font-size: 15px;
+}
+.arrowicon{
+     font-size: 35px;
+}
+}
+@media (max-width: 700px){
+.home-container .home-title{
+    top: 79px;
+}
+.question{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.questionlink{
+    width: 100%;
+    font-size: 14px;
+}
+.usericon{
+    padding: .4rem .6rem;
+    font-size: 25px;
+}
+}
+@media (max-width: 600px){
+.home-container .home-title{
+    top: 45px;
+    font-size: 24px;
+}
+    .home-question-wrraper{
+    padding: 20px 15px;
+    width: 90%;
+    }
+    .question-wrraper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+.usericon{
+ padding: 1rem 1.1rem;
+ font-size: 36px;
+}
+.questionlink{
+    font-size: 12px;
+}
+.home-input input{
+    padding: 18px 16px;
+    font-size: 12px;
+}
+.home-input input::placeholder{
+    font-size: 12px;
+}
+.home-input button{
+    padding: 10px;
+    font-size: 12px;
+}
+
+}
